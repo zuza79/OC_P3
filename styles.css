@@ -1,0 +1,68 @@
+body {
+    font-family : 'Roboto', sans-serif;
+    margin : 0;
+    }
+    h1 {
+    font-family : shrikhand;
+    font-size : 25px;
+    letter-spacing : 1px;
+    }
+    h2 {
+    font-family : shrikhand;
+    font-size : 20px;
+    letter-spacing : 1px;
+    }
+    p {
+    margin-top : 0;
+    }
+    a {
+    color : white;
+    text-decoration : none;
+    }
+    header {
+    text-align : center;
+    }
+    .FormMap {
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    background-color : #EAECEE;
+    }
+    #map {
+    margin-top : 10px;
+    }
+    input::placeholder {
+    color : black;
+    font-weight : 800;
+    font-family : roboto;
+    }
+    #searching {
+    width : 130px;
+    padding : 10px;
+    outline : none;
+    }
+    .InSearching {
+    border-color : transparent;
+    background-color : #EAECEE;
+    }
+    input {
+    padding-left : 10px;
+    }
+    .LookResto {
+    padding : 40px 35px 40px 35px;
+    }
+    .ReserveMenu {
+    font-size : 25px;
+    font-weight : 900;
+    margin : 5px;
+    }
+    footer {
+    color : white;
+    background-color : #474f4e;
+    padding : 25px;
+    }
+    .FooterItem {
+    display : flex;
+    flex-direction : row;
+    gap : 10px;
+    }
