@@ -6,45 +6,103 @@
     <link rel="stylesheet" href="styles.css"/>
     <title>Ohmyfood</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">  
-    
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<!--a verifier avec sarra-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap" rel="stylesheet">
+   
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
       
 </head>
 
 <body>
-    <!--Header-->
+<!--Header-->
 <header >
     <h1>ohmyfood</h1>
+</header>
+<!--Home page-->
+<div class="HomePage">
+        <!--Map-->
     <form class="FormMap" method="GET">
         <i id="map" class="fas fa-map-marker-alt fa 1x"></i> 
         <input id="searching" class="InSearching" type="search" placeholder="Paris, Belleville"/>
     </form>
+        <!--Look Resto-->
     <div class="LookResto">
-        <p class="ReserveMenu">Réservez le menu qui</p>
-        <p class="ReserveMenu">vous convient</p>
-        <p>Découvrez des restaurants d'exeption</p>
-        <p>séléctionnés par nos soins</p>
+        <div class="ReserveMenu">
+            <p>Réservez le menu qui</p>
+            <p>vous convient</p>
+        </div>
+            <p>Découvrez des restaurants d'exeption</p>
+            <p>séléctionnés par nos soins</p>
     </div>
-</header>
+        <!--Button-->
+    <input class="ButtonResto" type="button" value="Explorer nos restaurants">
+</div>
+<!--Functioning-->
+<div class="functioning">
+<h3>Fonctionnement</h3>
+
+    <div class="FuncMenu">
+        <div class="number">1</div>
+        <div class="select">
+            <i class="fas fa-mobile-alt fa-lg"></i>
+            <div class="TxtFunc">Choisissez un restaurant</div>
+        </div>
+
+            <div class="number">2</div>
+        <div class="select">
+            <i class="fas fa-list-ul fa-lg"></i>
+            <div class="TxtFunc">Composez votre menu</div>
+        </div>
+
+            <div class="number">3</div>
+        <div class="select">
+            <i class="fas fa-store fa-lg"></i>
+            <div class="TxtFunc">Dégustez au restaurant</div>
+        </div>
+    </div>    
+</div>
+<!--Resto-->
+<div class="resto">
+    <h3>Restaurants</h3>
+    <div class="CardResto">
+        <a href="#">
+        <img class="ImgResto" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo d'une assiette avec la salade">
+        </a>
+        <div class="BlocResto">
+            <div class="TxtResto">
+                <h4>La palette du goût</h4>
+                <p>Ménilmontant</p>
+            </div>
+            <div class="heart">
+                <i class="far fa-heart fa-lg"></i>
+                <i class="fas fa-heart fa-lg"></i>
+            </div>
+        </div>
+        
+        <div class="new">Nouveau</div>
+        
+    </div>
+    
+</div>
 
 <!--Footer-->
 <footer>
     <h2>ohmyfood</h2>
     <a href="#" class="FooterItem">
         <i class="fas fa-utensils"></i>
-        <p>Proposer un restaurant</p>
+        <p class="pFooter">Proposer un restaurant</p>
     </a>   
     <a href="#" class="FooterItem">
         <i class="fas fa-hands-helping fa-xs"></i>
-        <p>Devenir partenaire</p>
+        <p class="pFooter">Devenir partenaire</p>
     </a>
     <a href="#" class="FooterItem">
-        <p>Mentions légales</p>
+        <p class="pFooter">Mentions légales</p>
     </a>
-    <a href="#" class="FooterItem">
-        <p>Contact</p>
+    <a href="mailto:contact@ohmyfood.com" class="FooterItem">
+        <p class="pFooter">Contact</p>
     </a>
 </footer>
 
