@@ -1,0 +1,23 @@
+{
+  "name": "projet3",
+  "version": "1.0.0",
+  "description": "premier projet sass",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/index.scss:./css/style.css ./sass/restaurant.scss:./css/restaurant.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuza79/OC_P3.git"
+  },
+  "keywords": [
+    "ohmyfood"
+  
+  ],
+  "author": "zuzana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuza79/OC_P3/issues"
+  },
+  "homepage": "https://github.com/zuza79/OC_P3#readme"
+}

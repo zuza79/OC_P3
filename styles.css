@@ -1,4 +1,5 @@
 /*-------Mobil First-----------*/
+/*Homepage avec 4resto sans anim*/
 body {
     font-family : 'Roboto', sans-serif;
     margin : 0;
@@ -36,6 +37,9 @@ a {
 i{
     color: #474f4e;
 }
+input{
+    cursor: pointer;
+}
 /*---------Header-------*/
 header {
     text-align : center;
@@ -57,7 +61,7 @@ header {
     margin-top : auto;
     margin-bottom: auto;
 }
-input::placeholder {
+input::placeholder{
     color : black;
     font-weight : 800;
     font-family : roboto;
@@ -97,7 +101,6 @@ input {
     border: none;
 
     background: linear-gradient( 175deg, #FF79DA 5%, #9356DC 95%);
-    transition: box-shadow 150ms linear, transform 150ms linear;
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
 
     margin-left: auto;
@@ -159,6 +162,7 @@ input {
     position:relative;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 5px 5px 5px 3px #F2F2F2; 
+    margin-bottom: 20px;
 }
 .ImgResto{
     width: 100%;
@@ -176,15 +180,6 @@ input {
 .TxtResto{
     padding: 10px 10px 10px 19px;
 }
-.fa-heart{
-    color: black;
-    padding: 15px;
-
-}
-.fa-heart:hover{
-    cursor: pointer;
-    color:#FF79DA ;
-}
 .new{
     width: 80px;
     height: 30px;
@@ -199,6 +194,31 @@ input {
     background-color: #99e2d0;
     color: #278827;
 }
+/*---Heart-------*/
+.heart{
+    width: 25px;
+    height: 25px;
+   position: relative;
+   padding: 25px 25px 25px 25px; 
+    cursor: pointer;
+}
+.HeartNormal{
+    color: black;
+    position: absolute;
+    cursor: pointer;
+    background-color: white;
+}
+.HeartNormal:hover{
+    color:transparent;
+    background-color: transparent;
+}
+.HeartFull{
+    z-index: 1;
+    color: #FF79DA;
+    cursor: pointer;
+}
+
+   
 
 
 
@@ -225,3 +245,4 @@ footer {
 .fa-utensils, .fa-hands-helping{
     color: white;
 }
+
