@@ -24,6 +24,18 @@ h4{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+h5{
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+h6{
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
 p{
     margin-top: 0px;
     margin-bottom: 0px;
@@ -206,7 +218,7 @@ input {
     color: black;
     position: absolute;
     cursor: pointer;
-    background-color: white;
+    background-color: transparent;
 }
 .HeartNormal:hover{
     color:transparent;
@@ -220,8 +232,102 @@ input {
 
    
 
+/*----Pages Resto----*/
+.HeaderPages{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:65px;
+    padding: 20px 25px 10px 25px;
+}
+/*--Img--*/
+.img{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    position: relative;
+}
+.ImgRestoMenu{
+    width: 100%;
+    border-radius: 0;
+}
+.ImgBloc{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 30px 30px 0 0;
+    background-color: #f2f2f2;
+    position: absolute;
+    bottom: 0px;
+}
+.TxtImg{
+    width: 100%;
+}
+.h4TxtImg{
+    font-family: shrikhand;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+/*--Menu--*/
+.BlocMenu{
+    background-color:#f2f2f2 ;
+    padding-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.MenuEntrees{
+    padding: 15px
+}
+.link{
+    width: 40px;
+    height: 3px;
+    background-color: #99E2D0;
+    margin: 5px 0 10px 0 ;
+}
 
+.BlocItem{
+    height: 65px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: white;
+}
+.TxtMenuItem{
+    padding-left: 10px;
+}
+.pMenuItem{
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    padding-top: 5px;
+}
+.price{
+    display: flex;
+    align-items: flex-end;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.check{
+    width: 55px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 20px 20px 0;
+    background-color: #99e2d0;
 
+}
+.fa-check-circle{
+    color: white;
+    background-color:#99e2d0;
+}
+.CheckStart{
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 
