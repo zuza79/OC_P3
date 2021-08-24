@@ -1,5 +1,5 @@
 /*-------Mobil First-----------*/
-/*Homepage avec 4resto sans anim*/
+/*Homepage avec spin*/
 body {
     font-family : 'Roboto', sans-serif;
     margin : 0;
@@ -52,6 +52,63 @@ i{
 input{
     cursor: pointer;
 }
+/*--Loading Spinner--*/
+.loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: #f2f2f2;
+    position: absolute;
+    z-index: 20;
+    animation: LoadingPage 3s ease-in-out normal forwards ;
+}
+@keyframes LoadingPage {
+    0% {opacity: 1;}
+    75% {opacity: 1;}
+    99% {opacity: 0;}
+    100% {opacity: 0;
+        visibility: hidden;}}
+
+.BlocLoading{
+    display: flex;
+    flex-direction: column;
+}
+.ImgLoading{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.AnimLoading{
+    border: 20px solid #9356DC;
+    border-radius: 50%;
+    border-top: 20px solid #FF79DA;
+    border-bottom: 20px solid #99E2D0 ;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 50px;
+    top:0; right: 0; bottom: 0; left: 0;
+    animation: spin 3s linear infinite ;
+    
+    
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);
+            opacity: 1;
+        visibility: hidden;}
+}
+.fondu-out{
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+
+/*#9356DC #FF79DA #99E2D0
+*/
 /*---------Header-------*/
 header {
     text-align : center;
