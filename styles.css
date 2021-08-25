@@ -91,9 +91,7 @@ input{
     margin: auto;
     margin-top: 50px;
     top:0; right: 0; bottom: 0; left: 0;
-    animation: spin 3s linear infinite ;
-    
-    
+    animation: spin 3s linear infinite;
 }
 @keyframes spin {
     0% {transform: rotate(0deg);}
@@ -107,8 +105,7 @@ input{
 }
 
 
-/*#9356DC #FF79DA #99E2D0
-*/
+
 /*---------Header-------*/
 header {
     text-align : center;
@@ -163,18 +160,25 @@ input {
     height: 50px;
     display: flex;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     color: white;
     font-size: 15px;
     font-weight: 400;
     border-radius: 25px;
     border: none;
-
     background: linear-gradient( 175deg, #FF79DA 5%, #9356DC 95%);
     box-shadow: 0 10px 20px 0 rgb(0 0 0 / 30%);
-
+    transition: box-shadow 500ms linear, transform 150ms linear;
     margin-left: auto;
     margin-right: auto;
 }
+    .ButtonResto:hover{
+        width: 205px;
+        height: 45px;
+        box-shadow: 0 20px 40px 0 rgb(0 0 0 / 20%);
+    }
+
 /*--------Functioning--------*/
 .functioning{
     padding-left: 20px;
@@ -336,7 +340,8 @@ input {
     padding-right: 15px;
 }
 .MenuEntrees{
-    padding: 15px
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .link{
     width: 40px;
@@ -346,15 +351,18 @@ input {
 }
 
 .BlocItem{
+    width: 350px;
     height: 65px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: white;
 }
 .TxtMenuItem{
+    width: 240px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 .pMenuItem{
     font-size: 12px;
@@ -362,29 +370,57 @@ input {
     padding-top: 5px;
 }
 .price{
+    width: 45px;
     display: flex;
     align-items: flex-end;
+    text-align: right;
     font-weight: bolder;
     padding-bottom: 10px;
+    transform: translateX(50px);
 }
+/*--Check anim--*/
 .check{
     width: 55px;
     height: 65px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 15px 15px 0;
     background-color: #99e2d0;
+    transform: translateX(80px);
+}
 
-}
-.fa-check-circle{
-    color: white;
-    background-color:#99e2d0;
-}
 .CheckStart{
     margin-left: auto;
     margin-right: auto;
+    color: white;
+    background-color:#99e2d0;
+   
 }
+.BlocItem:hover .check{
+    transform: translateX(0px);
+    transition-duration: 4s;
+}
+    
+.BlocItem:hover .CheckStart{
+    animation: CheckRotate 4s linear 1;
+}
+    @keyframes CheckRotate {
+        0% {transform: rotate(0deg);}
+
+        99% {transform: rotate(360deg);}        100% {transform: rotate(0deg);}
+              
+        100% {transform: rotate (0deg);}
+    }    
+    
+    
+    
+
+.BlocItem:hover .price{
+    transform: translateX(0px);
+    transition-duration: 4s;
+}
+
 
 
 
